@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DiceRollerImage</string>
+    <string name="dice_picture">Imag</string>
+    <string name="roller_lable">Rolling</string>
+    <string name="reset_lable">reset</string>
+    <string name="dice_first">First Dice</string>
+</resources>

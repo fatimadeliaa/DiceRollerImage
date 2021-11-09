@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/dice_picture"
+        android:src="@drawable/dice_1" />
+
+    <ImageView
+        android:id="@+id/iv_dice_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/dice_picture"
+        android:src="@drawable/dice_1" />
+
+    <TextView
+        android:id="@+id/tv_dice_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_dice"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:background="@android:color/black"
+        android:text="@string/dice_first"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp" />
+
+    <TextView
+        android:id="@+id/tv_dice_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_dice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:background="@android:color/black"
+        android:text="@string/dice_first"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp" />
+
+    <Button
+        android:id="@+id/btn_roller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dice_first"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="@string/roller_lable"
+        android:textSize="@dimen/_16sdp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_resset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dice_second"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:text="@string/reset_lable"
+        android:textSize="@dimen/_16sdp"
+        android:background="@android:color/white"
+        android:textColor="@color/colorAccent"/>
+
+</RelativeLayout>
